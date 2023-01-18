@@ -2,7 +2,7 @@
 """
 Created on Mon May 24 16:22:52 2021
 
-@author: Kryptic Nessi
+@author: Nhlanhla Hlengane
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -41,14 +41,14 @@ plt.title("Sample variance to arithmetic mean ratio")
 plt.ylabel("Sample variance/Arithmatic mean")
 plt.xlabel("Arithmetic mean")
 plt.show()
-print(yerror) #confirm these using a calculator
-#plt.scatter(xbararr,Ssquared_xbar)
+print(yerror) 
 
 #fraction of bins that agree with the poisson plot within one standard deviation
 mu=[4,10,30,100]
 bin_frac=[4/7,4/7,5/8,7/9]
 Nbins=[7,7,8,9]
 u_bins=[]
+
 #fraction uncertainty
 for i in range(4):
     u_bins.append(np.sqrt(bin_frac[i]*(1-(bin_frac[i])/Nbins[i])))
